@@ -1,0 +1,100 @@
+.list__container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.list__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+.list__heading {
+  padding: 16px 62px;
+  color: rgba(255, 255, 255, 0.589);
+  background-color: black;
+  font-size: 22px;
+  font-weight: 400;
+}
+.list__main {
+  margin: 50px 200px;
+}
+.list__main h2 {
+  font-weight: 500;
+}
+.error {
+  margin: 5px 0 20px;
+  padding-left: 50px;
+}
+.error p {
+  color: red;
+}
+.list__input {
+  margin-top: 40px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list__input input {
+  border: 1px solid rgba(128, 128, 128, 0.794);
+  color: grey;
+  outline: none;
+  flex: 1;
+  font-size: 18px;
+  margin-right: 50px;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+.list__input button {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 255, 0.698);
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 255, 0.698);
+}
+.listItems__container {
+  height: 250px;
+  overflow: scroll;
+}
+.list__all {
+  border: 0.5px solid rgba(128, 128, 128, 0.493);
+  border-radius: 5px;
+}
+.listItems__container::-webkit-scrollbar {
+  display: none;
+}
+input[type="checkbox"]:checked + label.strikethrough {
+  text-decoration: line-through;
+}
+
+.list__single {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.493);
+}
+.list__single-checkbox {
+  display: flex;
+  align-items: center;
+}
+.list__single-checkbox input {
+  margin-right: 50px;
+  width: 17px;
+  height: 17px;
+}
+.list__single-checkbox label {
+  color: black;
+  font-size: 18px;
+}
+.MuiSvgIcon-root {
+  color: rgba(255, 0, 0, 0.713);
+  cursor: pointer;
+}
