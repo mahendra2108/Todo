@@ -10,7 +10,9 @@ const ListInput = ({ error, setInput, addItem, input }) => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <button onClick={addItem}>Add</button>
+        <button onClick={addItem} className="button">
+          Add
+        </button>
       </div>
       {error && (
         <div className="error">

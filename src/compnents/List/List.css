@@ -50,7 +50,7 @@
   border-radius: 5px;
   padding: 3px 10px;
 }
-.list__input button {
+.button {
   padding: 5px 10px;
   background-color: rgba(0, 0, 255, 0.698);
   color: white;
@@ -94,7 +94,42 @@ input[type="checkbox"]:checked + label.strikethrough {
   color: black;
   font-size: 18px;
 }
-.MuiSvgIcon-root {
+.delete {
   color: rgba(255, 0, 0, 0.713);
   cursor: pointer;
+}
+.edit {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.openModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  border: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.openModal h2 {
+  color: skyblue;
+}
+.openModal input {
+  margin: 20px 0;
+  border: 1px solid rgba(128, 128, 128, 0.794);
+  color: grey;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+.buttons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
 }

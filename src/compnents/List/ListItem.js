@@ -1,7 +1,8 @@
 import React from "react";
 import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 
-const ListItem = ({ list, deleteTask }) => {
+const ListItem = ({ list, deleteTask, editTask }) => {
   return (
     <div className="listItems__container">
       <div
@@ -12,8 +13,8 @@ const ListItem = ({ list, deleteTask }) => {
         }}
       >
         {list.length > 0 &&
-          list.map((item) => (
-            <div className="list__single">
+          list.map((item, index) => (
+            <div className="list__single" key={index}>
               <div className="list__single-checkbox">
                 <input
                   type="checkbox"
@@ -21,11 +22,21 @@ const ListItem = ({ list, deleteTask }) => {
                   id="packers"
                   value="1"
                 />
-                <label for="packers" class="strikethrough">
+                <label htmlFor="packers" className="strikethrough">
                   {item}
                 </label>
               </div>
-              <DeleteIcon onClick={() => deleteTask(item)} />
+              <div>
+                <EditIcon
+                  color="green"
+                  className="edit"
+                  onClick={() => editTask(item)}
+                />
+                <DeleteIcon
+                  onClick={() => deleteTask(item)}
+                  className="delete"
+                />
+              </div>
             </div>
           ))}
       </div>
